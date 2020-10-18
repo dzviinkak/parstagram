@@ -27,8 +27,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         // saves images as png (as a separate file)
         let imageData = imageView.image!.pngData()
         // createss url that leads to the saves image => allows to put it into the table on parse (i.e. in post)
-        let file = PFFileObject(data: imageData!)
-        
+        let file = PFFileObject(name: "image.png", data: imageData!)
         post["image"] = file
         
         post.saveInBackground(block: { (success,error) in

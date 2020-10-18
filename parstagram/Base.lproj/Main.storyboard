@@ -134,6 +134,11 @@
                                                 <constraint firstItem="qpf-yW-hj1" firstAttribute="top" secondItem="H6Z-MA-wTV" secondAttribute="bottom" constant="8" id="nt6-o5-yKQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="3Wf-k9-Mx4" id="ilr-jH-cVs"/>
+                                            <outlet property="photoView" destination="H6Z-MA-wTV" id="xcx-Vr-2G8"/>
+                                            <outlet property="usernameLabel" destination="qpf-yW-hj1" id="uwB-9p-b4X"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -148,6 +153,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="DeR-jO-wYp" id="Y6P-Kt-OCX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9LW-x0-IZ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
