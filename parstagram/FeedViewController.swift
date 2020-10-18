@@ -47,7 +47,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell ") as! PostCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as! PostCell
         // gets one specific post
         // configure the process of getting the username of the person posting image into the feed
         let post = posts[indexPath.row]
