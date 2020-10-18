@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import AlamofireImage
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // --- Copy this only
             
             let parseConfig = ParseClientConfiguration {
-                    $0.applicationId = "AppId"
-                    $0.clientKey = "ClientKey"
+                    $0.applicationId = "25yxOnauFiuT7F6k7OI5TC5ErWNNltMjxPlUPyDf"
+                    $0.clientKey = "4uRXKyTmITQn96y0zUFZFYmHfst3bR4FwgHSStwZ"
                     $0.server = "https://parseapi.back4app.com"
             }
             Parse.initialize(with: parseConfig)
